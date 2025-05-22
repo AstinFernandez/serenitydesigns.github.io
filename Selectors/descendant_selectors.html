@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width=device-width, intial-scale = 1.0">
+        <title>Document</title>
+        <style>
+            .main-menu{
+                background-color: #333;
+                padding: 10px;
+            }
+            .main-menu ul{
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+            .main-menu li{
+                display: inline-block;
+                margin-right: 20px;
+            }
+            .main-menu a{
+                color: #fff;
+                text-decoration: none;
+                padding: 5px 10px;
+                transition: background-color 0.3s ease;
+            }
+            .main-menu .sub-menu > ul{
+                background-color: #ff69b4;
+                padding: 10px;
+                display: none;
+                position: absolute;
+            }
+            .main-menu .sub-menu > ul{
+                display: block;
+            }
+            .main-menu .sub-menu > ul li{
+                margin-bottom: 5 px;
+            }
+            .main-menu .sub-menu > ul li a{
+                color: #fff;
+                text-decoration: none;
+                padding: 5px;
+            }
+            .main-menu .sub-menu > ul li a:hover{
+                background-color: #e35a9f;
+            }
+        </style>
+    </head>
+
+    <body>
+        <nav class = 'main-menu'>
+            <ul>
+                <li><a href = "#">Home</a></li>
+                <li><a href = "#">About</a></li>
+                <li class = "sub-menu">
+                    <a href = "#">Services</a>
+                    <ul>
+                        <li><a href = "#">Web Design</a></li>
+                        <li><a href = "#">Graphic Design</a></li>
+                        <li><a href = "#">SEO</a></li>
+                    </ul>
+                </li>
+                <li><a href = "#">Contact</a></li>
+            </ul>
+        </nav>
+    </body>
+</html>

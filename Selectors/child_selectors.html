@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .menu > li{
+                display: inline-block;
+                margin-right: 20px;
+            }
+             .menu > li > a{
+                text-decoration: none;
+                color: #333;
+                font-size: 18px;
+             }
+             .menu > li > a:hover{
+                color: #f3727b;
+             }
+             .sub-menu{
+                display: none;
+                position: absolute;
+                background-color: #f7f7f7;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+             }
+             .menu > li:hover .sub-menu{
+                display: block;
+             }
+             .sub-menu li{
+                padding: 10px;
+             }
+             .sub-menu li a{
+                color: #666;
+                text-decoration: none;
+                display: block;
+             }
+             .sub-menu li a:hover{
+                color: #f3727b;
+             }
+        </style>
+    </head>
+
+    <body>
+        <nav>
+            <ul class = "menu">
+                <li><a href = "h">Home</a></li>
+                <li><a href = "#">About</a>
+                    <ul class = "sub-menu">
+                        <li><a href = "#">Mission</a></li>
+                        <li><a href = "#">Vision</a></li>
+                        <li><a href = "#"> Values</a></li>
+                    </ul>
+                </li>
+                <li><a href = "#">Services</a></li>
+                <li><a href = "#">Contact</a></li>
+            </ul>
+        </nav>
+    </body>
+</html>

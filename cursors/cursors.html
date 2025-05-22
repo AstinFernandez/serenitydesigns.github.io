@@ -1,0 +1,60 @@
+<!--<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>CSS cursor property</title>
+        <style>
+            .wait{
+                cursor: auto;
+            }
+            h1{
+                color: red;
+            }
+        </style>
+    </head>
+
+    <body>
+        <center>
+            <h1>Welcome to the page</h1>
+            <p>To change the mouse curosr, move the mouse over the text.</p>
+            <p class="wait">Wait until next suggestion</p>
+        </center>
+    </body>
+</html>-->
+
+
+
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Make our cursor as hand</title>
+        <style>
+            body{
+                width: 90%;
+            }
+            h1{
+                color: red;
+                text-align: center;
+            }
+            li:hover{
+                display: inline-block;
+                cursor: grab;
+                transition: all 0.3s ease;
+                box-shadow: var(--color-black);
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Welcome to the course list</h1>
+        <div class="sub">Course Lists:</div>
+        <ul>
+            <li>CSE</li>
+            <li>ECE</li>
+            <li>IT</li>
+            <li>MECH</li>
+            <li>CIVIL</li>
+            <li>AI</li>
+            <li>EEE</li>
+        </ul>
+    </body>
+</html>
